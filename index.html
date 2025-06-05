@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/input/text 
+    -->
+    <script>
+        function cambiarContenido() {
+            let div = document.getElementById('miDiv');
+                div.innerHTML = 'Contenido cambiado';
+        }
+    //Funcion de suma
+        function sumar(){
+            let num1 = 4;
+            let num2 = 10;
+            let suma = num1 + num2;
+
+            let div = document.getElementById('suma');
+                div.innerHTML = '<h2>Resultado: '+suma+'</h2>';
+        }
+
+    </script>
+</head>
+<body>
+    <div id="miDiv">Contenido original</div>
+    <button onclick="cambiarContenido()">Cambiar Contenido</button>
+    <section>
+        ¡¡¡Vamos a SUMAR!!!
+        <br>
+        <div id="suma">
+            Resultado: 
+        </div>
+        <button onclick="sumar()">Ver Resultado</button>
+    </section>
+    
+    
+</body>
+</html>
